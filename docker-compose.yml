@@ -1,0 +1,6 @@
+services:
+  builder:
+    build: ./.docker/builder
+    volumes:
+      - ./output:/home/dev/build/output
+      - ./userpatches:/home/dev/build/userpatches
